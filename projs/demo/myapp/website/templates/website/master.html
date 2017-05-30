@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block page_title %} {% endblock page_title %}</title>
+</head>
+<body>
+
+{% block main_content %} {% endblock main_content %}
+
+<script type="text/javascript" src="{% static 'website/js/jquery.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+	<title>Course Management System</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}">
+</head>
+<body>
+{% block main_block %} {% endblock %}
+
+<!--script type="text/javascript" src="{% static 'website/js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'website/js/myjquery.js' %}"></script-->
+<script type="text/javascript" src="{% static 'website/js/angular.js' %}"></script>
+<script type="text/javascript" src="{% static 'website/js/app.js' %}"></script>
+</body>
+</html>

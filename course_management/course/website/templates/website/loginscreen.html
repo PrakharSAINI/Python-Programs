@@ -1,0 +1,28 @@
+{% extends 'website/master.html' %}
+{% block main_block %}
+<style>
+.green{
+	color: green;
+}
+
+.red{
+	color: red;
+}
+</style>
+<form class="form-inline" ng-controller="LoginCtrl">
+  <div class="form-group">
+    <label for="InputEmail">Email</label>
+    <input type="email" class="form-control" id="InputEmail" placeholder="jane.doe@example.com" ng-model="user.email">
+  </div>
+  <div class="form-group">
+    <label for="InputPass">Password</label>
+    <input type="password" class="form-control" id="InputPass" placeholder="Password" ng-model="user.password">
+  </div>
+  <button id="login_button" ng-click="authenticate();" type="button" class="btn btn-default">Login</button>
+
+  <div>
+  	<span ng-class="loginStatus === true ? 'green' : 'red'">{{ loginMsg }}</span>
+  </div>
+</form>
+
+{% endblock %}

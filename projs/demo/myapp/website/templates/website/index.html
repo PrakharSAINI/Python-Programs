@@ -1,0 +1,8 @@
+{% extends "website/master.html" %}
+{% load static %}
+{% block page_title %} Home Page {% endblock page_title %} 
+
+{% block main_content %}
+Welcome to Django App
+<img src="{% static 'website/images/img1.jpg' %}" />
+{% endblock main_content %}
